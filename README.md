@@ -1,1 +1,2 @@
--
+- https://gopics0u.github.io/Black-Translucent/css/BlackTranslucent.css
+- https://gopics0u.github.io/Black-Translucent/images/silver_surfer.png
