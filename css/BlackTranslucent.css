@@ -1,6 +1,6 @@
 :root {
   /* APP ELEMENTS */
-  --app-bg: url(https://imgur.com/a/silver-surfer-alone-space-2XUlyC2);
+  --app-bg: url(https://imgur.com/a/2XUlyC2);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 10px;
@@ -9,13 +9,13 @@
   --sidebar-opacity: 0.4;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  /* ACCENT HSL AND TEXT COLOR SETTINGS */
-  --accent-hue: 156;
-  --accent-saturation: 77.5%;
-  --accent-lightness: 47.1%;
+  /* ACCENT HSL AND TEXT COLOR SETTINGS - CHANGÉ DE VERT À GRIS FONCÉ */
+  --accent-hue: 0;
+  --accent-saturation: 0%;
+  --accent-lightness: 25%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
-  --accent-text-color: hsl(0,0%,0%);
+  --accent-text-color: hsl(0,0%,100%);
   --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35);
   --accent-secondary-text-color: hsl(0,0%,94%);
   /* ALERT HSL AND TEXT COLOR SETTINGS */
@@ -26,7 +26,7 @@
   --alert-opacity: 1;
   --alert-action-color: hsl(0,0%,100%);
   --alert-text-color: hsl(0,0%,100%);
-  /* MENTION HSL COLOR SETTINGS */
+  /* MENTION HSL COLOR SETTINGS - CHANGÉ POUR SUIVRE L'ACCENT GRIS */
   --mention-hue: var(--accent-hue);
   --mention-saturation: var(--accent-saturation);
   --mention-lightness: var(--accent-lightness);
@@ -68,7 +68,7 @@
   --button-height: 32px;
   --button-padding: 0 16px;
   --button-color: hsla(var(--accent-hsl),var(--accent-opacity));
-  --button-action-color: hsl(0,0%,0%);
+  --button-action-color: hsl(0,0%,100%);
   --button-text-color: var(--accent-text-color);
   --button-radius: 16px;
   /* SWITCH SETTINGS */
