@@ -26,10 +26,10 @@
   --alert-opacity: 1;
   --alert-action-color: hsl(0,0%,100%);
   --alert-text-color: hsl(0,0%,100%);
-  /* MENTION HSL COLOR SETTINGS - CHANGÉ POUR SUIVRE L'ACCENT GRIS */
-  --mention-hue: var(--accent-hue);
-  --mention-saturation: var(--accent-saturation);
-  --mention-lightness: var(--accent-lightness);
+  /* MENTION HSL COLOR SETTINGS - CHANGÉ POUR JAUNE */
+  --mention-hue: 50;
+  --mention-saturation: 100%;
+  --mention-lightness: 60%;
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
@@ -83,7 +83,7 @@
   --popout-shadow: 0 8px 10px 1px hsl(0,0%,0%,0.14), 0 3px 14px 2px hsl(0,0%,0%,0.12), 0 5px 5px -3px hsl(0,0%,0%,0.2);
   --nowplaying-color: 88,101,242;
   --streaming-color: 89,54,149;
-  --spotify-color: 29,185,84;
+  --spotify-color: 64,64,64;
   --server-folder-color: hsl(0,0%,100%,0.1);
   --supporter-color: hsla(var(--accent-hsl),var(--accent-opacity));
   /* TOOLTIP SETTINGS */
@@ -128,8 +128,8 @@
   --background-modifier-selected: hsl(0,0%,100%,0.125);
   --background-modifier-accent: hsl(0,0%,100%,0.175);
   --background-primary: transparent;
-  --text-brand: hsl(var(--accent-hsl));
-  --text-link: hsl(var(--accent-hsl));
+  --text-brand: hsl(50, 100%, 60%);
+  --text-link: hsl(50, 100%, 60%);
 }
 
 /*
@@ -760,7 +760,8 @@ body {
 }
 
 .mentionButton__841c8 {
-  --text-link: hsl(var(--accent-hsl));
+  --text-link: hsl(50, 100%, 60%) !important;
+  color: hsl(50, 100%, 60%) !important;
 }
 
 .threadSuggestionBar__841c8 {
@@ -768,11 +769,11 @@ body {
 }
 
 .colorLink__201d5, .colorLink_fbc755 {
-  color: hsl(var(--accent-hsl));
+  color: hsl(50, 100%, 60%) !important;
 }
 
 .fakeLink_ada32f {
-  color: hsl(var(--accent-hsl));
+  color: hsl(50, 100%, 60%) !important;
 }
 
 .inlineCode_ada32f,
@@ -799,6 +800,20 @@ body {
   --textarea-alpha: 0.1;
   background-color: rgba(var(--textarea-color), var(--textarea-alpha));
   border-radius: var(--textarea-radius);
+}
+
+/*
+ *
+ *  MENTIONS JAUNES - AJOUT FORCÉ
+ *
+ */
+.mention, .wrapper-1ZcZW-, .mention-1f5kbO {
+  background-color: hsla(50, 100%, 60%, 0.3) !important;
+  color: hsl(50, 100%, 70%) !important;
+}
+
+.wrapper-1ZcZW-:hover {
+  background-color: hsla(50, 100%, 60%, 0.4) !important;
 }
 
 /*
@@ -1282,6 +1297,9 @@ body {
 }
 .vc-settings-tab-bar .item_b3f026:last-child {
   margin-right: 0;
+}
+.vc-settings-tab-bar .item_b3f026:after {
+  display: none;
 }
 .vc-settings-tab-bar + .divider_ae36e5 {
   display: none;
